@@ -1,7 +1,7 @@
 <?php 
 $name = $_POST['name']
 $emai = $_POST['email']
-$subjec = $_POST['subject']
+$subject = $_POST['subject']
 $message = $_POST['message']
 
 
@@ -10,7 +10,7 @@ $mailheader = "From:". $name. "<". $email.">\r\n";
 
 $recipient = "learnflyonsky@gmail.com" ;
 
-mail($recipient, $subjec, $message, $mailheader)
+mail($recipient, $subject, $message, $mailheader)
 or die("Error");
 
 echo'
@@ -32,9 +32,6 @@ echo'
 
 </body>
 </html>
-
-
-
 
 ';
 

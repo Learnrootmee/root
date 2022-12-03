@@ -143,28 +143,44 @@
 </div> 
 
 
-
-<h1>Contact us</h1>
-
-<form class="contact-form" action="mail.php" method="post">
-<input type="text"  name="name" placeholder="Full name">
-<input type="text" name="mail" placeholder="Your e-maill">
-<input type="text" name="subject" placeholder="Subject">
-<textarea name="message" placeholder="Message"></textarea>
-<button type="submit" name="submit"> Send mail</button>
-</form>
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="container">
+  <div class="form">
+      <form id="my-form"action="https://formspree.io/f/xpzngvlg" method="POST">
+          <div class="header">
+              <h2>
+                  Contact Form
+              </h2>
+          </div>
+          <div class="fields">
+          <div class="field1">
+              <div class="field f-1">
+                  <input type="text" name="FirstName" placeholder="First Name" required/>
+              </div>
+              <div class="field f-1">
+                  
+                  <input type="text" name="LastName" placeholder="Last Name" required/>
+              </div>
+          </div>
+          <div class="field2">
+              <div class="field f-2">
+                  <input type="email" name="Email" placeholder="Email" required/>
+              </div>
+              <div class="field f-2">
+                  <input type="number" name="Phone" placeholder="Phone" required/>
+              </div>
+          </div>
+      </div>
+          <div class="message">
+              <input type="textarea" name="Message" placeholder="Type your message here" required/>
+              
+          </div>
+          <button>
+              Submit
+          </button>
+      </form>
+      <p id="my-form-status"></p>
+  </div>
+</div>
 
 
 
@@ -192,4 +208,6 @@
 
 
 </body>
+
+<script src="script.js"></script>
 </html>
